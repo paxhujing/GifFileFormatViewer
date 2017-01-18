@@ -1,3 +1,5 @@
 GifFileFormatViewer/obj/
 GifFileFormatViewer.Console/obj/
 GifFileFormatViewer.Console/bin/
+.vs/GifFileFormatViewer/v14/
+GifFileFormatViewer/bin/
