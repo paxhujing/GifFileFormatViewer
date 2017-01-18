@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GifFileFormatViewer.Console", "GifFileFormatViewer.Console\GifFileFormatViewer.Console.csproj", "{B087DAF6-A397-4B19-A7F1-9F41DABD7DDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GifFileFormatViewer", "GifFileFormatViewer\GifFileFormatViewer.csproj", "{9E00C222-5E49-40BE-B550-10FE9FE130F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B087DAF6-A397-4B19-A7F1-9F41DABD7DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B087DAF6-A397-4B19-A7F1-9F41DABD7DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B087DAF6-A397-4B19-A7F1-9F41DABD7DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B087DAF6-A397-4B19-A7F1-9F41DABD7DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E00C222-5E49-40BE-B550-10FE9FE130F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E00C222-5E49-40BE-B550-10FE9FE130F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E00C222-5E49-40BE-B550-10FE9FE130F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E00C222-5E49-40BE-B550-10FE9FE130F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
