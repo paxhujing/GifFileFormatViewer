@@ -10,7 +10,6 @@ namespace GifFileFormatViewer
     /// <summary>
     /// GIF文件头。
     /// </summary>
-    [StructLayout(LayoutKind.Explicit)]
     public struct Header
     {
         #region Constructors
@@ -22,36 +21,34 @@ namespace GifFileFormatViewer
         /// <param name="offset">偏移量。</param>
         public Header(Byte[] data, Int32 offset)
         {
-            _signature = new Byte[3];
-            Array.Copy(data, offset, _signature, 0, 3);
-            _version = new Byte[3];
-            Array.Copy(data, offset + 3, _version, 0, 3);
+            Signature = ASCIIEncoding.ASCII.GetString(data, offset, 3);
+            Version = ASCIIEncoding.ASCII.GetString(data, offset + 3, 3);
+            Length = 6;
         }
 
         #endregion
 
         #region Properties
 
-        #region Signature
+        /// <summary>
+        /// 字节长度。
+        /// </summary>
+        internal Int32 Length { get; }
 
-        [FieldOffset(0)]
-        private Byte[] _signature;
+        #region Signature
 
         /// <summary>
         /// 签名。
         /// </summary>
-        public String Signature => ASCIIEncoding.ASCII.GetString(_signature);
+        public String Signature { get; }
 
         #endregion
 
         #region Version
-
-        [FieldOffset(3)]
-        private Byte[] _version;
         /// <summary>
         /// 版本。
         /// </summary>
-        public String Version => ASCIIEncoding.ASCII.GetString(_version);
+        public String Version { get; }
 
         #endregion
 

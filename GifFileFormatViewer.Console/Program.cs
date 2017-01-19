@@ -14,8 +14,8 @@ namespace GifFileFormatViewer.Console
         {
             using (Stream stream = File.Open(@"d:\splash_loading.gif", FileMode.Open))
             {
-                GifParser parser = new GifParser(stream);
-                parser.Initialize();
+                GifParser parser = new GifParser();
+                parser.Initialize(stream);
             }
         }
     }

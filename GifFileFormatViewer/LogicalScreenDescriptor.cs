@@ -10,7 +10,7 @@ namespace GifFileFormatViewer
     /// <summary>
     /// 逻辑屏幕描述符。
     /// </summary>
-    public struct LogicalScreenDescriptor
+    public class LogicalScreenDescriptor
     {
         #region Fields
 
@@ -21,7 +21,7 @@ namespace GifFileFormatViewer
         #region Constructors
 
         /// <summary>
-        /// 初始化结构 GifFileFormatViewer.LogicalScreenDescriptor 实例。
+        /// 初始化类型 GifFileFormatViewer.LogicalScreenDescriptor 实例。
         /// </summary>
         /// <param name="data">原始数据。</param>
         /// <param name="offset">偏移量。</param>
@@ -33,6 +33,7 @@ namespace GifFileFormatViewer
             Pack = new PackField(_data[offset + 4]);
             BackgroundColorIndex = _data[offset + 5];
             AspectRatio = _data[offset + 6];
+            Length = 7;
         }
 
         #endregion
@@ -121,6 +122,11 @@ namespace GifFileFormatViewer
         #endregion
 
         #region Properties
+
+        /// <summary>
+        /// 字节长度。
+        /// </summary>
+        internal Int32 Length { get; }
 
         /// <summary>
         /// 逻辑屏幕宽度（像素）。

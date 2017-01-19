@@ -40,9 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationExtensionBlock.cs" />
+    <Compile Include="BlockIntroducer.cs" />
+    <Compile Include="ColorTable.cs" />
+    <Compile Include="DataSubBlock.cs" />
+    <Compile Include="ExtensionBlock.cs" />
+    <Compile Include="ExtensionBlockIdentifier.cs" />
+    <Compile Include="GraphicControlExtensionBlock.cs" />
     <Compile Include="Header.cs" />
     <Compile Include="GifParser.cs" />
+    <Compile Include="ImageDescriptor.cs" />
     <Compile Include="LogicalScreenDescriptor.cs" />
+    <Compile Include="PlainTextExtensionBlock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
